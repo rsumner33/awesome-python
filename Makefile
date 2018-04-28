@@ -1,12 +1,16 @@
-site_install:
-	pip install mkdocs==0.16.3
-	pip install mkdocs-material==1.12.2
+BASEDIR=$(CURDIR)
+DOCDIR=$(BASEDIR)/docs
 
-site_link:
-	ln -sf $(CURDIR)/README.md $(CURDIR)/docs/index.md
+install:
+	pip install mkdocs
 
-site_preview: site_link
+link:
+	ln -sf $(BASEDIR)/README.md $(DOCDIR)/index.md
+
+preview:
+	$(MAKE) link
 	mkdocs serve
 
-site_deploy: site_link
+deploy:
+	$(MAKE) link
 	mkdocs gh-deploy --clean
