@@ -5,6 +5,12 @@ A curated list of awesome Python frameworks, libraries, software and resources.
 Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
 - [Awesome Python](#awesome-python)
+    - [Admin Panels](#admin-panels)
+    - [Algorithms and Design Patterns](#algorithms-and-design-patterns)
+    - [Anti-spam](#anti-spam)
+    - [Asset Management](#asset-management)
+    - [Audio](#audio)
+    - [Authentication](#authentication)
     - [Build Tools](#build-tools)
     - [Caching](#caching)
     - [ChatOps Tools](#chatops-tools)
@@ -44,7 +50,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
     - [HTML Manipulation](#html-manipulation)
     - [HTTP](#http)
     - [Imagery](#imagery)
-    - [Implementations](#implementations)
     - [Interactive Interpreter](#interactive-interpreter)
     - [Internationalization](#internationalization)
     - [Job Scheduler](#job-scheduler)
@@ -403,25 +408,22 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 
 *Libraries for debugging code.*
 
-* pdb-like Debugger
-    * [ipdb](https://pypi.python.org/pypi/ipdb) - IPython-enabled [pdb](https://docs.python.org/3/library/pdb.html).
-    * [pdb++](https://pypi.python.org/pypi/pdbpp/) - Another drop-in replacement for pdb.
+* Debugger
+    * [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar) - Display various debug information for Django.
+    * [django-devserver](https://github.com/dcramer/django-devserver) - A drop-in replacement for Django's runserver.
+    * [flask-debugtoolbar](https://github.com/mgood/flask-debugtoolbar) - A port of the django-debug-toolbar to flask.
+    * [ipdb](https://pypi.python.org/pypi/ipdb) - IPython-enabled [pdb](https://docs.python.org/2/library/pdb.html).
     * [pudb](https://pypi.python.org/pypi/pudb) - A full-screen, console-based Python debugger.
-    * [remote-pdb](https://github.com/ionelmc/python-remote-pdb) - Remote vanilla PDB (over TCP sockets).
+    * [pyringe](https://github.com/google/pyringe) - Debugger capable of attaching to and injecting code into Python processes.
     * [wdb](https://github.com/Kozea/wdb) - An improbable web debugger through WebSockets.
+    * [winpdb](http://winpdb.org/) - A Python Debugger with GUI, capable of remote debugging based on `rpdb2`.
 * Profiler
     * [line_profiler](https://github.com/rkern/line_profiler) - Line-by-line profiling.
     * [memory_profiler](https://github.com/fabianp/memory_profiler) - Monitor Memory usage of Python code.
     * [profiling](https://github.com/what-studio/profiling) - An interactive Python profiler.
 * Others
-    * [django-debug-toolbar](https://github.com/django-debug-toolbar/django-debug-toolbar) - Display various debug information for Django.
-    * [django-devserver](https://github.com/dcramer/django-devserver) - A drop-in replacement for Django's runserver.
-    * [flask-debugtoolbar](https://github.com/mgood/flask-debugtoolbar) - A port of the django-debug-toolbar to flask.
-    * [hunter](https://github.com/ionelmc/python-hunter) - Hunter is a flexible code tracing toolkit.
-    * [lptrace](https://github.com/khamidou/lptrace) - [strace](http://man7.org/linux/man-pages/man1/strace.1.html) for Python programs.
-    * [manhole](https://github.com/ionelmc/python-manhole) - Debug service that will accept unix domain socket connections and present the stacktraces for all threads and an interactive prompt.
     * [pyelftools](https://github.com/eliben/pyelftools) - Parsing and analyzing ELF files and DWARF debugging information.
-    * [pyringe](https://github.com/google/pyringe) - Debugger capable of attaching to and injecting code into Python processes.
+    * [python-statsd](https://github.com/WoLpH/python-statsd) - Python Client for the [statsd](https://github.com/etsy/statsd/) server.
 
 ## Deep Learning
 
@@ -590,7 +592,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [PyGObject](https://wiki.gnome.org/Projects/PyGObject) - Python Bindings for GLib/GObject/GIO/GTK+ (GTK+3)
 * [PyQt](https://riverbankcomputing.com/software/pyqt/intro) - Python bindings for the [Qt](http://www.qt.io/) cross-platform application and UI framework, with support for both Qt v4 and Qt v5 frameworks.
 * [PySide](https://wiki.qt.io/PySide) - Python bindings for the [Qt](http://www.qt.io/) cross-platform application and UI framework, supporting the Qt v4 framework.
-* [pywebview](https://github.com/r0x0r/pywebview/) - A lightweight cross-platform native wrapper around a webview component that allows to display HTML content in its own native dedicated window
 * [Tkinter](https://wiki.python.org/moin/TkInter) - Tkinter is Python's de-facto standard GUI package.
 * [Toga](https://github.com/pybee/toga) - A Python native, OS native GUI toolkit.
 * [urwid](http://urwid.org/) - A library for creating terminal GUI applications with strong support for widgets, events, rich colors, etc.
@@ -665,7 +666,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [PeachPy](https://github.com/Maratyszcza/PeachPy) - x86-64 assembler embedded in Python. Can be used as inline assembler for Python or as a stand-alone assembler for Windows, Linux, OS X, Native Client and Go.
 * [PyPy](http://pypy.org/) - An implementation of Python in Python. The interpreter uses black magic to make Python very fast without having to add in additional type information.
 * [Pyston](https://github.com/dropbox/pyston) - A Python implementation built using LLVM and modern JIT techniques with the goal of achieving good performance.
-* [Pyjion](https://github.com/Microsoft/Pyjion) - A JIT for Python based upon CoreCLR.
+* [Pyjion](https://github.com/Microsoft/Pyjion) - A JIT for Python based upon CoreCLR 
 * [Stackless Python](https://bitbucket.org/stackless-dev/stackless/overview) - An enhanced version of the Python.
 
 ## Imagery
@@ -684,19 +685,6 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [scikit-image](http://scikit-image.org/) - A Python library for (scientific) image processing.
 * [thumbor](https://github.com/thumbor/thumbor) - A smart imaging service. It enables on-demand crop, re-sizing and flipping of images.
 * [wand](https://github.com/dahlia/wand) - Python bindings for [MagickWand](http://www.imagemagick.org/script/magick-wand.php), C API for ImageMagick.
-
-## Implementations
-
-*Implementations of Python.*
-
-* [CLPython](https://github.com/metawilm/cl-python) - Implementation of the Python programming language written in Common Lisp.
-* [CPython](https://hg.python.org/cpython) - **Default, most widely used implementation of the Python programming language written in C.**
-* [IronPython](https://github.com/IronLanguages/ironpython3) - Implementation of the Python programming language written in C# targeting the .NET Framework and Mono.
-* [Jython](https://hg.python.org/jython) - Implementation of Python programming language written in Java for the Java virtual machine (JVM).
-* [MicroPython](https://github.com/micropython/micropython) - MicroPython - a lean and efficient Python programming language implementation for microcontrollers and constrained systems
-* [PyPy](https://bitbucket.org/pypy/pypy) - Implementation of the Python programming language written in RPython and translated into C. PyPy focuses on speed, efficiency and compatibility with the original CPython interpreter.
-* [PySec](https://github.com/ebranca/owasp-pysec) - Hardened version of python that makes it easier for security professionals and developers to write applications more resilient to attacks and manipulations.
-* [Stackless Python](https://bitbucket.org/stackless-dev/stackless/wiki/Home) - An enhanced version of the Python programming language which allows programmers to reap the benefits of thread-based programming without the performance and complexity problems associated with conventional threads.
 
 ## Interactive Interpreter
 
@@ -732,7 +720,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 *Libraries for generating and working with logs.*
 
 * [Eliot](https://github.com/ClusterHQ/eliot) - Logging for complex & distributed systems.
-* [logbook](http://logbook.readthedocs.io/en/stable/) - Logging replacement for Python.
+* [logbook](http://pythonhosted.org/Logbook/) - Logging replacement for Python.
 * [logging](https://docs.python.org/2/library/logging.html) - (Python standard library) Logging facility for Python.
 * [Raven](https://github.com/getsentry/raven-python) - The Python client for Sentry.
 * [Sentry](https://pypi.python.org/pypi/sentry) - A realtime logging and aggregation server.
@@ -811,6 +799,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [pyzmq](http://zeromq.github.io/pyzmq/) - A Python wrapper for the ZeroMQ message library.
 * [Twisted](https://twistedmatrix.com/trac/) - An event-driven networking engine.
 * [txZMQ](https://github.com/smira/txZMQ) - Twisted based wrapper for the ZeroMQ message library.
+* [NAPALM](https://github.com/napalm-automation/napalm) - Cross-vendor API to manipulate network devices.
 
 ## News Feed
 
@@ -1062,6 +1051,7 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
     * [radar](https://pypi.python.org/pypi/radar) - Generate random datetime / time.
 * Error Handler
     * [FuckIt.py](https://github.com/ajalt/fuckitpy) - FuckIt.py uses state-of-the-art technology to make sure your Python code runs whether it has any right to or not.
+
 
 ## Text Processing
 
