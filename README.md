@@ -861,13 +861,18 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [django-guardian](https://github.com/django-guardian/django-guardian) - Implementation of per object permissions for Django 1.2+
 * [django-rules](https://github.com/dfunckt/django-rules) - A tiny but powerful app providing object-level permissions to Django, without requiring a database.
 
-## Processes
+## Natural Language Processing
 
-*Libraries for starting and communicating with OS processes.*
+*Libraries for working with human languages.*
 
-* [envoy](https://github.com/kennethreitz/envoy) - Python [subprocess](https://docs.python.org/2/library/subprocess.html) for Humans™.
-* [sarge](http://sarge.readthedocs.io/) - Yet another wrapper for subprocess.
-* [sh](https://github.com/amoffat/sh) - A full-fledged subprocess replacement for Python.
+* [Jieba](https://github.com/fxsjy/jieba) - Chinese text segmentation.
+* [langid.py](https://github.com/saffsd/langid.py) - Stand-alone language identification system.
+* [NLTK](http://www.nltk.org/) - A leading platform for building Python programs to work with human language data.
+* [Pattern](http://www.clips.ua.ac.be/pattern) - A web mining module for the Python.
+* [SnowNLP](https://github.com/isnowfy/snownlp) - A library for processing Chinese text.
+* [spaCy](https://spacy.io/) - A library for industrial-strength natural language processing in Python and Cython.
+* [TextBlob](https://github.com/sloria/TextBlob) - Providing a consistent API for diving into common NLP tasks.
+* [TextGrocery](https://github.com/2shou/TextGrocery) - A simple, efficient short-text classification tool based on LibLinear and Jieba.
 
 ## Queue
 
@@ -1011,9 +1016,11 @@ Inspired by [awesome-php](https://github.com/ziadoz/awesome-php).
 * [Jinja2](https://github.com/pallets/jinja) - A modern and designer friendly templating language.
 * [Mako](http://www.makotemplates.org/) - Hyperfast and lightweight templating for the Python platform.
 
-## Testing
+* [envoy](https://github.com/kennethreitz/envoy) - Python [subprocess](https://docs.python.org/2/library/subprocess.html) for Humans™.
+* [sarge](http://sarge.readthedocs.io/) - Yet another wrapper for subprocess.
+* [sh](https://github.com/amoffat/sh) - A full-fledged subprocess replacement for Python.
 
-*Libraries for testing codebases and generating test data.*
+## Queue
 
 * Testing Frameworks
     * [hypothesis](https://github.com/HypothesisWorks/hypothesis-python) - Hypothesis is an advanced Quickcheck style property based testing library.
