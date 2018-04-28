@@ -8,3 +8,4 @@ before_script:
 
 script:
   - awesome_bot README.md --allow-dupe --white-list pyparsing,graphviz.org
+  - awesome_bot README.md --allow-dupe --white-list pyparsing
